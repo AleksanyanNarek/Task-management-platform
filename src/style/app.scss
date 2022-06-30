@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    &::-webkit-scrollbar{
+        width: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: darkgray;
+    }
+    &::-webkit-scrollbar-track{
+        background: white;
+    }
+    @media (max-width: 1200px){
+        font-size: 80%;
+    }
+    @media (min-width: 1700px){
+        font-size: 125%;
+    }
+}
+
+body{
+    background-image: linear-gradient(45deg, #8669C3, #8687FB, #FF6DC6);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+}
+button{
+    cursor: pointer;
+}
+
+
+@import './taskPlatform.scss';
+@import './addTask.scss'
